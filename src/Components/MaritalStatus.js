@@ -12,14 +12,16 @@ class MaritalStatus extends Component {
       'Widowed'
     ]
   }
+
+
   render() {
     let categoryOptions = this.props.categories.map(category =>{
-      return <option key={category} value='category'>{category}</option>
+      return <option key={category} value={category}>{category}</option>
     })
     return (
       <div className="MaritalStatus">
        <label>Marital Status </label>
-      <select ref="category">
+      <select ref="category" value={this.props.status} onChange={this.props.updateStatus}>>
       {categoryOptions}
       </select>
       </div>

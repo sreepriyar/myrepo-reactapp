@@ -12,6 +12,14 @@ class Address extends Component {
         SecondaryPh: 'SecondaryPh'
     }
   }
+
+ UserGreeting(props) {
+    return <h1>Welcome back!</h1>;
+  }
+  
+   GuestGreeting(props) {
+    return <h1>Please sign up.</h1>;
+  }
   render() {
     return (
       <div className="Address">

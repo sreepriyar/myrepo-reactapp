@@ -18,15 +18,23 @@ h4 {
   color: white;
 }
 
+.maritalStatus {
+  display: inline-flex;
+  width: 900px;
+}
+.primary {
+  width: 400px;
+}
+
 label {
   color: blue;
-  width: 200px;
+  width: 180px;
   display: inline-block;
   text-align:left
 }
 
 input {
-  width: 300px
+  width: 180px
 }
 
 .primary {
